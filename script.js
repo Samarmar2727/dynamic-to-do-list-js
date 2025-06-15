@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const addButton = document.getElementById("addButton")
-    const taskInput = document.getElementById("task-input")
-    const taskList = document.getElementById("task-list")
+    const addButton = document.getElementById("add-task-btn");
+    const taskInput = document.getElementById("task-input");
+    const taskList = document.getElementById("task-list");
 
     function addTask() {
-        let taskText = taskInput.value.trim()
+        let taskText = taskInput.value.trim();
 
         if(taskText){
             const li = document.createElement("li");
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
              taskList.appendChild(li); 
              taskInput.value = "";
         }else{
-             alert("please add your task")
+             alert("please add your task");
         }
 
     }
@@ -30,4 +30,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 
-})
+});
